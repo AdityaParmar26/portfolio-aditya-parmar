@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{!-- Google Fonts --}}
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    {{!-- Adding CSS --}}
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- font-awesome -->
+    <script src="https://kit.fontawesome.com/e64edb2dad.js" crossorigin="anonymous"></script>
+
+    <title>Portfolio</title>
+</head>
+
+<body>
+    {{!-- Navbar --}}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid main_nav">
+                        <a class="navbar-brand" href="#">My Portfolio</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#home">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#aboutme">About Me</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#education">Education</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#skills">Skills</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#projects">Projects</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#certificates">Certificates</a>
+                                </li>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    {{!-- Home Page --}}
+    <div class="home_page" id="home">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-10 col-12 mx-auto">
+                    <div class="row">
+                        <div class="col-md-6 col-12 left_side">
+                            <h1 class="greet">HELLO!</h1>
+                            <h2>I am <span class="name">Aditya</span> Parmar...</h2>
+                            <h2>A <span class="element"></span></h2>
+                            <button class="contact_me_btn"><a href="#contact_me">Contact Me</a></button>
+                        </div>
+                        <div class="col-md-6 col-12 right_side">
+                            <img src="images/home_page_img.jpg" alt="home_page_img" class="home_page_img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{!-- About Me Page --}}
+    <div class="about_me_page" id="aboutme">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-10 col-12 mx-auto">
+                    <div class="head">About Me</div>
+                    <div class="row">
+                        <div class="col-md-10 col-12">
+                            <div class="about_me_page_content">
+                                I am a Second Year Undergraduate student, currently pursuing Computer Science
+                                Engineering from Shri Govindram Seksaria Institute of Technology and Science, Indore.
+                                As a passionate programmer and web enthusiast, a keen of learning about new technologies
+                                had been always irrevocable.
+                                My interest in various Frontend and Backend technologies helps me to boost my progress
+                                in web-field. In programming-field,
+                                my skill set includes Java, C, C++ languages. In free hours, I like to play outdoor
+                                games and listening music.
+                            </div>
+                            <button class="download_btn" id="download_button">Download CV</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{!-- Education Page --}}
+    <div class="education_page" id="education">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-10 col-12 mx-auto">
+                    <div class="head">Education</div>
+                    <div class="row">
+                        <div class="col-md-10 col-12">
+                            <div class="education_page_content">
+                                <div class="BTech">
+                                    <h3 class="subhead_education">Bachelor Of Technology (2019 - 2023)</h3>
+                                    <h4>From - Shri Govindram Seksaria Institute of Technology and Science, Indore.</h4>
+                                    <h4>Branch - Computer Science</h4>
+                                    <h4>CGPA - 8.4</h4>
+                                </div>
+                                <div class="higher_secondary">
+                                    <h3 class="subhead_education">Higher Secondary (2018 - 2019)</h3>
+                                    <h4>From - St. Norbert Senior Secondary School.</h4>
+                                    <h4>Percentage - 91.8%</h4>
+                                </div>
+                                <div class="high_school">
+                                    <h3 class="subhead_education">High School (2016 - 2017)</h3>
+                                    <h4>From - St.Norbert Senior Secondary School.</h4>
+                                    <h4>CGPA - 9.2</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{!-- Skills Page --}}
+    <div class="skills_page" id="skills">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-10 col-12 mx-auto">
+                    <div class="head">Skills</div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <div class="progress_bars">
+                                <div class="progress_bar">
+                                    <p class="progress_text"> HTML <span>92%</span></p>
+                                    <div class="progress_percent"></div>
+                                </div>
+                                <div class="progress_bar">
+                                    <p class="progress_text"> CSS <span>89%</span></p>
+                                    <div class="progress_percent"></div>
+                                </div>
+                                <div class="progress_bar">
+                                    <p class="progress_text"> JavaScript <span>84%</span></p>
+                                    <div class="progress_percent"></div>
+                                </div>
+                                <div class="progress_bar">
+                                    <p class="progress_text"> NodeJS <span>75%</span></p>
+                                    <div class="progress_percent"></div>
+                                </div>
+                                <div class="progress_bar">
+                                    <p class="progress_text"> Java <span>85%</span></p>
+                                    <div class="progress_percent"></div>
+                                </div>
+                                <div class="progress_bar">
+                                    <p class="progress_text"> C++ <span>78%</span></p>
+                                    <div class="progress_percent"></div>
+                                </div>
+                                <div class="progress_bar">
+                                    <p class="progress_text"> C <span>72%</span></p>
+                                    <div class="progress_percent"></div>
+                                </div>
+                                <div class="progress_bar">
+                                    <p class="progress_text"> MongoDB <span>68%</span></p>
+                                    <div class="progress_percent"></div>
+                                </div>
+                                <div class="progress_bar">
+                                    <p class="progress_text"> ExpressJS <span>75%</span></p>
+                                    <div class="progress_percent"></div>
+                                </div>
+                                <div class="progress_bar">
+                                    <p class="progress_text"> Linux <span>60%</span></p>
+                                    <div class="progress_percent"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{!-- Projects Page --}}
+    <div class="projects_page" id="projects">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-10 col-12 mx-auto">
+                    <div class="head">Project</div>
+                    <div class="row">
+                        <div class="col-md-8 col-12">
+                            <div class="project_page_content">
+                                <div class="project_head">
+                                    <h3>Weather Website</h3>
+                                </div>
+                                <div class="project_description">
+                                    This is a Web Application which will give weather details of the city provided by
+                                    the user. The technologies used in this project are HTML, CSS, JavaScript,
+                                    Bootstrap, NodeJS, ExpressJS.
+                                </div>
+                                <button class="project_btn"><a href="https://weather-page-by-aditya.herokuapp.com/"
+                                        target="_blank">See Project</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{!-- Certificates Page --}}
+    <div class="certificates_page" id="certificates">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-10 col-12 mx-auto">
+                    <div class="head">Certificates</div>
+                    <div class="row">
+                        <div class="col-md-12 col-12">
+                            <div class="certificate_section row">
+                                <div class="col-md-6 col-12">
+                                    <div class="certificate_img"><img src="images/Java_Basic.png.jpg"
+                                            alt="javaBasicCertificate" style="width: 290px; height: 170px"></div>
+                                    <button class="certificate_btn"><a href="https://www.hackerrank.com/certificates/f15e99b7bad6" target="_blank">View Certificate</a></button>
+                                </div>
+                                <div class="col-md-4 col-12">
+                                    <div class="certificate_img"><img src="images/JavaScript_basic.png.jpg"
+                                            alt="javaScriptBasicCertificate" style="width: 290px; height: 170px"></div>
+                                    <button class="certificate_btn"><a href="https://www.hackerrank.com/certificates/5d35e6821f45" target="_blank">View Certificate</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{!-- Contact Me Page --}}
+    <div class="contact_me_page" id="contact_me">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-10 col-12 mx-auto">
+                    <div class="contact_me_head">Contact Me</div>
+                    <div class="contact_details">
+                        <div class="phone">
+                            <i class="fas fa-phone-alt fa-1x"></i>
+                            <p>+91 7024093646</p>
+                        </div>
+                        <div class="email">
+                            <i class="far fa-envelope fa-1x"></i>
+                            <p>parmar.adi371@gmail.com</p>
+                        </div>
+                        <div class="address">
+                            <i class="fas fa-map-marker-alt fa-1x"></i>
+                            <p>Indore</p>
+                        </div>
+                    </div>
+                    <div class="social_media">
+                        <a href="https://www.facebook.com/adiparmar371" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
+                        <a href="https://github.com/AdityaParmar26" target="_blank"><i class="fab fa-github-square fa-2x"></i></a>
+                        <a href="https://www.instagram.com/adi_parmar_26/" target="_blank"><i class="fab fa-instagram-square fa-2x"></i></a>
+                        <a href="https://www.linkedin.com/in/aditya-parmar-3679341a4/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ 
+    {{!-- Adding JavaScript --}}
+    <script src="javascript/script.js"></script>
+
+    {{!-- Adding JavaScript Plugin --}}
+    <script src="javascript/typed.min.js"></script>
+    <script type="text/javascript">
+        var typed = new Typed('.element', {
+            strings: ["Student.", "Web Developer.", "Programmer."],
+            typeSpeed: 100,
+            loop: true,
+            backSpeed: 60
+        });
+    </script>
+    <!--Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

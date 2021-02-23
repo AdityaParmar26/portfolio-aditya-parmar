@@ -1,0 +1,443 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+
+/* Navigation Bar Styling */
+
+.main_nav {
+    font-family: Sriracha;
+    margin-top: 10px;
+}
+
+.navbar-brand {
+    margin-left: 5px;
+    color: rgb(50, 83, 180) !important;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: rgb(50, 83, 180);
+    font-size: 23px;
+    margin-left: 34px;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: rgb(190, 0, 105);
+}
+
+
+/* Home Page Styling */
+
+.left_side {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: flex-start;
+    margin-top: 160px;
+    padding-left: 40px;
+    font-family: 'Akaya Telivigala', cursive;
+    color: #3e4346;
+}
+
+.left_side .greet {
+    font-size: 60px;
+    opacity: 0;
+    animation: displayItems 2s 0.5s forwards;
+}
+
+.left_side h2 {
+    font-size: 40px;
+    opacity: 0;
+    animation: displayItems 2s 0.7s forwards;
+}
+
+.left_side h2 .name {
+    color: rgb(190, 0, 105);
+}
+
+.contact_me_btn {
+    color: #3e4346;
+    border: 2px solid #3e4346;
+    background-color: #f8f9fa;
+    height: 40px;
+    width: 120px;
+    font-size: 21px;
+    border-radius: 10px;
+    margin-top: 3px;
+    opacity: 0;
+    animation: displayItems 2s 1s forwards;
+}
+
+.contact_me_btn:hover {
+    background-color: rgb(190, 0, 105);
+    border: 1px solid rgb(190, 0, 105);
+    box-shadow: 3px 4px 5px rgba(18, 18, 18, 0.5);
+    color: #f8f9fa;
+    transition: all 0.3s linear;
+}
+
+.contact_me_btn a {
+    color: #3e4346;
+    text-decoration: none;
+}
+
+.contact_me_btn a:hover {
+    color: #f8f9fa;
+}
+
+@keyframes displayItems {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.right_side {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: flex-start;
+    margin-top: 120px;
+    padding-left: 100px;
+}
+
+.home_page_img {
+    height: 350px;
+    border: 13px solid #3e4346e3;
+    border-radius: 15px;
+    box-shadow: 6px 6px 5px rgba(18, 18, 18, 0.5);
+}
+
+
+/* About Me Page Styling */
+
+.about_me_page {
+    margin-top: 40px;
+}
+
+.head {
+    color: rgb(50, 83, 180);
+    font-family: Sriracha;
+    font-size: 40px;
+}
+
+.head::after {
+    width: 118px;
+    height: 3px;
+    background-color: rgb(50, 83, 180);
+    content: "";
+    display: inline-block;
+    margin-left: 2%;
+    transform: translateY(-7px);
+}
+
+.about_me_page_content {
+    margin-top: 13px;
+    font-family: Akaya Telivigala;
+    font-size: 25px;
+    color: #3e4346;
+}
+
+.download_btn {
+    color: #3e4346;
+    border: 2px solid #3e4346;
+    background-color: #f8f9fa;
+    height: 40px;
+    width: 130px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 9px;
+    font-family: Akaya Telivigala;
+}
+
+.download_btn:hover {
+    background-color: rgb(190, 0, 105);
+    border: 1px solid rgb(190, 0, 105);
+    box-shadow: 3px 4px 5px rgba(18, 18, 18, 0.5);
+    color: #f8f9fa;
+    transition: all 0.3s linear;
+}
+
+
+/* Education Page Styling */
+
+.education_page {
+    margin-top: 40px;
+}
+
+.subhead_education {
+    color: rgb(190, 0, 105);
+    margin-top: 25px;
+    font-family: Akaya Telivigala;
+}
+
+.education_page_content h4 {
+    color: #3e4346;
+    font-family: Akaya Telivigala;
+}
+
+
+/* Skills Page Styling */
+
+.skills_page {
+    margin-top: 40px;
+}
+
+.progress_bars {
+    font-family: Akaya Telivigala;
+    margin-top: 20px;
+}
+
+.progress_bar {
+    width: 600px;
+    height: 28px;
+    background-color: #3e43467c;
+    margin: 15px 0;
+    border-radius: 7px;
+    box-shadow: 2px 2px 7px #3e4346;
+    position: relative;
+}
+
+.progress_text {
+    position: absolute;
+    left: 10px;
+    font-size: 20px;
+    color: #f8f9fa;
+}
+
+.progress_text span {
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.progress_percent {
+    width: 0%;
+    height: 100%;
+    background-color: rgb(190, 0, 105);
+    border-radius: 7px;
+    transition: width 1s 0.3s ease-out;
+}
+
+
+/* Styling Projects Page */
+
+.projects_page {
+    margin-top: 40px;
+}
+
+.project_page_content {
+    font-family: Akaya Telivigala;
+    margin-top: 10px;
+}
+
+.project_head h3 {
+    color: rgb(190, 0, 105);
+    font-size: 27px;
+}
+
+.project_description {
+    color: #3e4346;
+    font-size: 23px;
+}
+
+.project_btn {
+    background-color: #f8f9fa;
+    border: 2px solid #3e4346;
+    width: 110px;
+    font-size: 20px;
+    border-radius: 7px;
+    margin-top: 10px;
+}
+
+.project_btn:hover {
+    background-color: rgb(190, 0, 105);
+    border: 2px solid rgb(190, 0, 105);
+    box-shadow: 3px 4px 5px rgba(18, 18, 18, 0.5);
+    transition: all 0.3s linear;
+}
+
+.project_btn a {
+    color: #3e4346;
+    text-decoration: none;
+}
+
+.project_btn a:hover {
+    color: #f8f9fa;
+}
+
+
+/* Certificate Page Styling */
+
+.certificates_page {
+    margin-top: 40px;
+}
+
+.certificate_section {
+    margin: 20px 0 0 0;
+    font-family: Akaya Telivigala;
+}
+
+.certificate_btn {
+    background-color: #f8f9fa;
+    border: 2px solid #3e4346;
+    width: 160px;
+    font-size: 20px;
+    border-radius: 7px;
+    margin: 12px 0 35px 65px;
+}
+
+.certificate_btn:hover {
+    background-color: rgb(190, 0, 105);
+    border: 2px solid rgb(190, 0, 105);
+    box-shadow: 3px 4px 5px rgba(18, 18, 18, 0.5);
+    transition: all 0.3s linear;
+}
+
+.certificate_btn a {
+    color: #3e4346;
+    text-decoration: none;
+}
+
+.certificate_btn a:hover {
+    color: #f8f9fa;
+}
+
+
+/* Contact Me Page Styling */
+
+.contact_me_page {
+    height: 330px;
+    width: 100%;
+    background-color: #3e4346;
+    color: #f8f9fa;
+}
+
+.contact_me_head {
+    color: #f8f9fa;
+    font-family: Sriracha;
+    font-size: 40px;
+    padding-top: 35px;
+    margin-bottom: 30px;
+}
+
+.contact_me_head::after {
+    width: 118px;
+    height: 3px;
+    background-color: #f8f9fa;
+    content: "";
+    display: inline-block;
+    margin-left: 2%;
+    transform: translateY(-7px);
+}
+
+.contact_details {
+    font-size: 18px;
+}
+
+.phone,
+.email,
+.address {
+    margin-bottom: 20px;
+}
+
+.contact_details p {
+    display: inline;
+    padding-left: 20px;
+}
+
+.social_media {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.social_media a {
+    color: #f8f9fa;
+    padding-left: 20px;
+}
+
+
+/* Responsiveness */
+
+@media(max-width: 1320px) {
+    .navbar .navbar-nav .nav-link {
+        font-size: 19px;
+        margin-left: 12px;
+    }
+    .navbar-brand {
+        margin-left: 0px;
+        font-weight: 600;
+        font-size: 25px;
+    }
+}
+
+@media(max-width: 1000px) {
+    .navbar .navbar-nav .nav-link {
+        margin-left: 8px;
+    }
+    .right_side {
+        padding-left: 15px;
+    }
+    .left_side h2 {
+        font-size: 31px;
+    }
+}
+
+@media(max-width: 767px) {
+    .right_side {
+        margin-top: 20px;
+        margin-left: 2px;
+    }
+    .left_side {
+        margin-top: 70px;
+        margin-left: 0px;
+    }
+}
+
+@media(max-width: 600px) {
+    .about_me_page_content {
+        font-size: 20px;
+    }
+    .about_me_page .head {
+        font-size: 35px;
+    }
+    .progress_bar {
+        width: 100%;
+    }
+}
+
+@media(max-width: 400px) {
+    .head {
+        font-size: 31px;
+    }
+    .contact_me_head {
+        font-size: 31px;
+    }
+    .subhead_education {
+        font-size: 19px;
+    }
+    .education_page_content h4 {
+        font-size: 17px;
+    }
+}
