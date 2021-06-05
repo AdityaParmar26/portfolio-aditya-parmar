@@ -16,7 +16,7 @@ app.get("/", (req, res) => {
 });
 
 app.get('/download', function(req, res) {
-    res.download(__dirname + '/AdityaCV.pdf');
+    res.download(__dirname + '/Aditya_Parmar_Resume.pdf');
 })
 
 http.listen(port, () => {

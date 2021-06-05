@@ -177,19 +177,19 @@ body {
 }
 
 
-/* Education Page Styling */
+/* Education Page Styling  and Experience Page Styling*/
 
-.education_page {
+.education_page, .experience_page {
     margin-top: 40px;
 }
 
-.subhead_education {
+.subhead_education, .subhead_experience {
     color: rgb(190, 0, 105);
     margin-top: 25px;
     font-family: Akaya Telivigala;
 }
 
-.education_page_content h4 {
+.education_page_content h4, .experience_page_content h4 {
     color: #3e4346;
     font-family: Akaya Telivigala;
 }
@@ -435,10 +435,10 @@ body {
     .contact_me_head {
         font-size: 31px;
     }
-    .subhead_education {
+    .subhead_education, .subhead_experience {
         font-size: 19px;
     }
-    .education_page_content h4 {
+    .education_page_content h4, .experience_page_content h4 {
         font-size: 17px;
     }
 }
